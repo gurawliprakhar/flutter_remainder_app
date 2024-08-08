@@ -1,15 +1,27 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
-class home_page extends StatefulWidget {
-  const home_page({super.key});
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
 
   @override
-  State<home_page> createState() => _home_pageState();
+  State<HomePage> createState() => _HomePageState();
 }
 
-class _home_pageState extends State<home_page> {
+class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(),
+      body: Column(
+        children: [
+          Text("Theme Data",
+            style: TextStyle(
+              fontSize: 30
+            ),
+          )
+        ],
+      ),
+    );
   }
 }
